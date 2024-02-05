@@ -1,11 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cordel Moderno</title>
+    <style>
+        @font-face {
+            font-family: passion_one;
+            src: url('Fontes/Passion_One/PassionOne-Bold.ttf') format('truetype');
+            font-weight: bold;
+        }
+        @font-face{
+            font-family: sriracha;
+            src: url('Fontes/Sriracha/Sriracha-Regular.ttf') format('truetype');
+            font-weight: regular;
+        }
+        :root{
+            --fonte-header: passion_one; 
+            --font-body: sriracha;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        header {
+            font-family: var(--fonte-header);
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 55px;
+            font-size: 2.4em;
+        }
+        header > p{
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: white;
+          font-size: 12px; 
+        }
+        .negrito{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .negrito:hover{
+            text-decoration: underline;
+        }
+        main p{
+            font-family: var(--font-body);
+            font-size: 23px;
+            padding: 70px 30px;
+        }
+        #container2{
+            position: relative;
+            background-image: url('imagens/background001.jpg');
+            background-attachment: fixed;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        #container5{
+            position: relative;
+            background-image: url('imagens/background002.jpg');
+            background-attachment: fixed;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        #conteudo2{
+            background-attachment: fixed;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>CORDEL MODERNO</h1>
+        <p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank" class="negrito">Milton Duarte</a></p>
+    </header>
+    <main>
+        <section>
+            <p>
+                Estou ficando cansado<br> 
+                Da tal tecnologia<br>
+                Só se fala por por e-mail<br>
+                Mensagem curta e fria<br>
+                Twiter e Facebook<br>
+                Antes que eu caduque<br>
+                Vou dizer tudo em poesia
+            </p>
+        </section>
+        <section id="container2">
+            <p  id="conteudo2">
+                Não é mais como era Antes<br>
+                É tudo abreviado<br> 
+                "Você" só tem duas letras<br>
+                O "O" e o "E" foi riscado<br>
+                Para declarar o amor<br>
+                Basta botar uma Flor<br>
+                E um coração desenhado.
+            </p>
+        </section>
+        <section>
+            <p>
+                Arroba agora não pesa<br>
+                É parte de um endereço<br> 
+                Ponto final nem se usa<br>
+                Ou vai até no começo<br>
+                Agora é .com<br>
+                Se o site é muito bom<br>
+                Ele vale um alto preço.
+            </p>
+            <p>
+                Pra piorar a linguagem<br> 
+                O emoticom é um risco<br>
+                Tem símbolo para tudo<br>
+                Ponto e vírgula e um asterisco<br>
+                Um beijo significa<br>
+                Pra entender como fica<br>
+                Decifre esse rabisco
+            </p>
+        </section>
+        <section id="container5">
+            <p id="conteudo5">
+                Tenho saudade das cartas<br>
+                Escritas com a própria mão<br>
+                Manda no mês de junho<br>
+                Só chegava no verão<br>
+                Mas matava a saudade<br>
+                Era texto de verdade<br>
+                Nas linhas de coração
+            </p>
+        </section>
+        <section>
+            <p>
+                Agora, escrevo e envio<br>
+                Chegando na mesma hora<br>
+                Mas quando vou prosear<br>
+                A pessoa foi embora<br>
+                Abriu outro aplicativo<br>
+                O mundo ficou cativo<br>
+                Da tecnologia do agora.
+            </p>
+            <p>
+                Felizmente, pra orar<br>
+                Não precisa de internet<br>
+                Deus escuta todo mundo<br>
+                Se quiser, faça esse teste<br>
+                Dois pontos são dois joelhos<br>
+                Seus lábios são aparelhos<br>
+                Deixe que Deus interprete
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Site criado por Gustavo Guanabara Para o CursoemVideo</p>
+    </footer>
 </body>
 </html>
