@@ -23,60 +23,71 @@
             margin: 0px;
             padding: 0px;
         }
-        header {
-            margin: auto;
-            font-family: var(--fonte-header);
+        html, body{
+            min-height: 100vh;
+            background-color: darkgray;
+        }
+        header{
             background-color: black;
             color: white;
             text-align: center;
-            padding: 55px;
-            font-size: 2.4em;
+        }
+        .h1{
+            font-family: var(--fonte-header);
+            padding-top: 50px;
+            text-transform: uppercase;
+            font-variant: small-caps;
+            font-size: 5vw;
         }
         header > p{
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
-          color: white;
-          font-size: 12px; 
+            padding-bottom: 50px;
+            font-size: 2vw;
         }
-        .negrito{
+        a{
             color: white;
-            font-weight: bold;
             text-decoration: none;
+            font-weight: bold;
         }
-        .negrito:hover{
+        a:hover{
             text-decoration: underline;
         }
-        main p{
+        section{
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            line-height: 2em;
+            padding-left: 30px;
             font-family: var(--font-body);
-            font-size: 23px;
-            padding: 70px 30px;
+            font-size: 3vw;
         }
-        #container2{
-            position: relative;
-            background-image: url('imagens/background001.jpg');
-            background-attachment: fixed;
-            background-size: 100%;
-            background-repeat: no-repeat;
+        .normal{
+            background-color: white;
+            color: black;
         }
-        #container5{
-            position: relative;
-            background-image: url('imagens/background002.jpg');
-            background-attachment: fixed;
-            background-size: 100%;
-            background-repeat: no-repeat;
+        .container{
+            background-color: gray;
+            color: white;
         }
-        #conteudo2{
-            background-attachment: fixed;
+        .conteudo{
+            background-color: rgba(0, 0, 0, 0.253);
+            
+            padding: 5px;
+            display: inline-block;
         }
-
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>CORDEL MODERNO</h1>
-        <p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank" class="negrito">Milton Duarte</a></p>
+        <h1 class="h1">Cordel Moderno</h1>
+        <p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank">Milton Duarte</a></p>
     </header>
     <main>
-        <section>
+        <section class="normal">
             <p>
                 Estou ficando cansado<br> 
                 Da tal tecnologia<br>
@@ -87,8 +98,8 @@
                 Vou dizer tudo em poesia
             </p>
         </section>
-        <section id="container2">
-            <p  id="conteudo2">
+        <section class="container">
+            <p  class="conteudo">
                 Não é mais como era Antes<br>
                 É tudo abreviado<br> 
                 "Você" só tem duas letras<br>
@@ -98,7 +109,7 @@
                 E um coração desenhado.
             </p>
         </section>
-        <section>
+        <section class="normal">
             <p>
                 Arroba agora não pesa<br>
                 É parte de um endereço<br> 
@@ -118,8 +129,8 @@
                 Decifre esse rabisco
             </p>
         </section>
-        <section id="container5">
-            <p id="conteudo5">
+        <section class="container">
+            <p class="conteudo">
                 Tenho saudade das cartas<br>
                 Escritas com a própria mão<br>
                 Manda no mês de junho<br>
@@ -129,7 +140,7 @@
                 Nas linhas de coração
             </p>
         </section>
-        <section>
+        <section class="normal">
             <p>
                 Agora, escrevo e envio<br>
                 Chegando na mesma hora<br>
@@ -151,7 +162,7 @@
         </section>
     </main>
     <footer>
-        <p>Site criado por Gustavo Guanabara Para o CursoemVideo</p>
+        <p>Site criado por <a href="#">Gustavo Guanabara</a> Para o <a href="#">CursoemVideo</a></p>
     </footer>
 </body>
 </html>
