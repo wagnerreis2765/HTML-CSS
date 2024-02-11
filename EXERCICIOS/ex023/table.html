@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        @font-face {
+            font-family: android;
+            src: url(../13/fontes/idroid.otf) format(truetype);
+            font-weight: normal;
+        }
+        :root{
+            --font-padrao: android;
+        }
+        body{
+            background-image: url('../ex022/imagens/background001.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center, right;
+        }
+        h1{
+            text-align: center;
+            font-family: var(--font-padrao);
+            margin-bottom: 1px;
+        }
+        main{
+            background-color: rgba(0, 0, 0, 0.575);
+            margin: 20px 10px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border-radius: 10px; 
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+            height: 150px;
+            border: 2px solid rgba(0, 0, 0, 0.336);
+            margin: auto;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .yellow{
+            background-color: rgb(148, 148, 12);
+            color: black;
+            font-weight: bolder;
+        }
+        .red{
+            background-color: rgb(116, 20, 20);
+            color: black;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Best Table</h1>
+    <main>
+        <table>
+            <tr>
+                <td class="yellow">A1</td>
+                <td class="red">A2</td>
+                <td class="yellow">A3</td>
+            </tr>
+            <tr>
+                <td class="red">B1</td>
+                <td class="yellow">B2</td>
+                <td class="red">B3</td>
+            </tr>
+            <tr>
+                <td class="yellow">C1</td>
+                <td class="red">C2</td>
+                <td class="yellow">C3</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
