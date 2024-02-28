@@ -25,13 +25,14 @@
             background-color: rgba(0, 0, 0, 0.637);
             border-collapse: collapse;
             margin: auto;
-            max-width: 900px;
-            min-width: 300px;
+            width: 400px;
+            height: 300px;
+            
         }
         th, td{
             border: 1px solid black;
-            padding: 7px 90px;
-            
+            padding: 5px;
+            text-indent: 5px;
         }
         .head{
             background-color: gray;
@@ -42,7 +43,7 @@
             color: white;
             font-family: monospace;
             font-size: 1.2em;
-            text-align: center;
+            
         }
         .foot{
             background-color: gray;
@@ -50,7 +51,11 @@
             text-align: center;
         }
         .numero{
-            width: 20px;
+            text-align: right;
+        }
+        .popu{
+            width: 5px;
+            text-align: center;
         }
     </style>
 </head>
@@ -59,52 +64,52 @@
         <table>
             <thead>
                 <tr class="head">
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col" style="width: 150px;">Estado</th>
+                    <th scope="col" class="popu">População</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>São Paulo</td>
-                    <td class="numero">44 411 238</td>
+                    <td class="numero">9 411 238</td>
                 </tr>
                 <tr>
-                    <td>São Paulo</td>
-                    <td class="numero">44 411 238</td>
+                    <td>Luanda</td>
+                    <td class="numero">8 411 238</td>
                 </tr>
                 <tr>
-                    <td>São Paulo</td>
-                    <td class="numero">44 411 238</td>
+                    <td>Benguela</td>
+                    <td class="numero">142 238</td>
                 </tr>
                 <tr>
-                    <td>São Paulo</td>
-                    <td class="numero">44 411 238</td>
+                    <td>Huambo</td>
+                    <td class="numero">1 411 238</td>
                 </tr>
                 <tr>
-                    <td>São Paulo</td>
-                    <td class="numero">44 411 238</td>
+                    <td>Kwanza Norte</td>
+                    <td class="numero">3 131 238</td>
                 </tr>
                 <tr>
-                    <td>São Paulo</td>
-                    <td class="numero">44 411 238</td>
+                    <td>Kwanza Sul</td>
+                    <td class="numero">8 411 238</td>
                 </tr>
                 <tr>
-                    <td>São Paulo</td>
-                    <td class="numero">44 411 238</td>
+                    <td>Cunene</td>
+                    <td class="numero">9 411 238</td>
                 </tr>
                 <tr>
-                    <td>São Paulo</td>
-                    <td class="numero">44 411 238</td>
+                    <td>Cabinda</td>
+                    <td class="numero">34 411 238</td>
                 </tr>
                 <tr>
-                    <td>São Paulo</td>
-                    <td class="numero">44 411 238</td>
+                    <td>Uíge</td>
+                    <td class="numero">56 411 238</td>
                 </tr>
             </tbody>
             <tfoot class="foot">
                 <tr>
-                    <td>Total de Habitantes</td>
-                    <td>00000</td>
+                    <th scope="row">Total de Habitantes</th>
+                    <th class="numero">30.253.653</th>
                 </tr>
             </tfoot>
         </table>
