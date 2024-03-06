@@ -28,10 +28,24 @@
             width: 400px;
             height: 300px;
         }
+        caption{
+            background-color: rgba(255, 255, 255, 0.24);
+            color: black;
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bolder;
+            border: 1px solid black;
+        }
         th, td{
             border: 1px solid black;
             padding: 5px;
             text-indent: 5px;
+        }
+        td{
+            border-bottom: 1px solid black;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f22f;
         }
         .head{
             background-color: gray;
@@ -51,6 +65,7 @@
         }
         .numero{
             text-align: right;
+            width: 5px;
         }
         .popu{
             width: 5px;
@@ -60,58 +75,61 @@
 </head>
 <body>
     <main>
-        <table>
-            <thead>
-                <tr class="head">
-                    <th scope="col" style="width: 150px;">Estado</th>
-                    <th scope="col" class="popu">População</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>São Paulo</td>
-                    <td class="numero">9 411 238</td>
-                </tr>
-                <tr>
-                    <td>Luanda</td>
-                    <td class="numero">8 411 238</td>
-                </tr>
-                <tr>
-                    <td>Benguela</td>
-                    <td class="numero">142 238</td>
-                </tr>
-                <tr>
-                    <td>Huambo</td>
-                    <td class="numero">1 411 238</td>
-                </tr>
-                <tr>
-                    <td>Kwanza Norte</td>
-                    <td class="numero">3 131 238</td>
-                </tr>
-                <tr>
-                    <td>Kwanza Sul</td>
-                    <td class="numero">8 411 238</td>
-                </tr>
-                <tr>
-                    <td>Cunene</td>
-                    <td class="numero">9 411 238</td>
-                </tr>
-                <tr>
-                    <td>Cabinda</td>
-                    <td class="numero">34 411 238</td>
-                </tr>
-                <tr>
-                    <td>Uíge</td>
-                    <td class="numero">56 411 238</td>
-                </tr>
-            </tbody>
-            <tfoot class="foot">
-                <tr>
-                    <th scope="row">Total de Habitantes</th>
-                    <th class="numero">30.253.653</th>
-                </tr>
-            </tfoot>
-        </table>
+        <div style="overflow-x: auto;">
+            <table>
+                <caption>População de Angola</caption>
+                <thead>
+                    <tr class="head">
+                        <th scope="col" style="width: 150px;">Estado</th>
+                        <th scope="col" class="popu">População</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>São Paulo</td>
+                        <td class="numero">9 411 238</td>
+                    </tr>
+                    <tr>
+                        <td>Luanda</td>
+                        <td class="numero">8 411 238</td>
+                    </tr>
+                    <tr>
+                        <td>Benguela</td>
+                        <td class="numero">142 238</td>
+                    </tr>
+                    <tr>
+                        <td>Huambo</td>
+                        <td class="numero">1 411 238</td>
+                    </tr>
+                    <tr>
+                        <td>Kwanza Norte</td>
+                        <td class="numero">3 131 238</td>
+                    </tr>
+                    <tr>
+                        <td>Kwanza Sul</td>
+                        <td class="numero">8 411 238</td>
+                    </tr>
+                    <tr>
+                        <td>Cunene</td>
+                        <td class="numero">9 411 238</td>
+                    </tr>
+                    <tr>
+                        <td>Cabinda</td>
+                        <td class="numero">34 411 238</td>
+                    </tr>
+                    <tr>
+                        <td>Uíge</td>
+                        <td class="numero">56 411 238</td>
+                    </tr>
+                </tbody>
+                <tfoot class="foot">
+                    <tr>
+                        <th scope="row">Total de Habitantes</th>
+                        <th class="numero">30.253.653</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </main>
 </body>
 </html>
